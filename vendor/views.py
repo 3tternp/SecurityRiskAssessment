@@ -2,9 +2,11 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def createVendor(request):
+def create_vendor(request):
+    """Render the page for creating a new vendor."""
     return render(request, 'vendor/createVendor.html')
 
-def vendorRoleError(request):
-    context={'val':True}
+def vendor_role_error(request):
+    """Render an error page for vendor role issues."""
+    context = {'val': True}
     return render(request, 'vendor/VendorRoleError.html', context)
