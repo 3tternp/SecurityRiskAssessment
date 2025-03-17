@@ -1,10 +1,12 @@
 from django import template
+from urllib.parse import urlparse
 
 register = template.Library()
 
 @register.filter
 def strip_http(value):
-    if 'http://' in value:
-        return value.replace('http://','')
-    if 'https://' in value:
-        return value.replace('https://','')
+    """
+    Removes the scheme (http:// or https://) from a URL.
+    """
+    parsed_url = urlparse(value)
+    return parsed_url.netloc if parsed_url.netloc else value
