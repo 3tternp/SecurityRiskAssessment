@@ -1,11 +1,11 @@
 """
 ASGI configuration for the sraToolDjango project.
 
-This module defines the ASGI callable that serves as the entry point
+This module defines the ASGI application callable that serves as the entry point
 for asynchronous web servers.
 
 For comprehensive details, refer to the official Django documentation:
-https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/
+https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
 """
 
 import os
