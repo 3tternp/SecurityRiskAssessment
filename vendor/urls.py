@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
-# from department import views
-# from vendor import views
 
 urlpatterns = [
-    path('vendor/create-vendor', views.createVendor, name="createVendor"),
-    path('vendor/vendorRoleError', views.vendorRoleError, name="vendorRoleError"),
+    path('vendor/create-vendor/', views.create_vendor, name="create_vendor"),
+    path('vendor/vendor-role-error/', views.vendor_role_error, name="vendor_role_error"),
 ]
