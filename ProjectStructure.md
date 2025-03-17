@@ -1,7 +1,7 @@
 # Project Structure
 
 ## Project Components
-The project runs on Django 3.1.7 .
+The project runs on Django 5.1.7 .
 
 The project makes use of 5 additional components which are called Apps. They are as follows:
 
